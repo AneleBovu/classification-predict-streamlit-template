@@ -24,9 +24,32 @@
 # Streamlit dependencies
 import streamlit as st
 import joblib,os
+#import re 
+#from nltk.corpus import stopwords
 
 # Data dependencies
 import pandas as pd
+
+#def remove_and_username(tweet):
+	#tweet = tweet.lower()
+	#tweet = re.sub(r'http\s+','',tweet)
+	#tweet = re.sub(r'@\S+','',tweet)
+	#return tweet
+
+#def remove_stop_words(tweet):
+	#sw = stopwords.words('english')
+	#sw.append('USERNAME')
+	#sw.append('URL')
+	#sw.append('rt')
+	#tweetfour = [y for y in tweet if not y in sw]
+	#return tweet
+
+#def remove_panctuation(tweet):
+	#tweet = re.sub(r'[^\w\s]','', str(tweet)
+	#tweet = tweet.lstrip()
+	#tweet = tweet.lstrip()
+	#tweet = tweet.replace(' ',' ')
+	#return tweet
 
 # Vectorizer
 news_vectorizer = open("resources/tfidfvect.pkl","rb")
